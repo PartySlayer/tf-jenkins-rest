@@ -1,4 +1,4 @@
 
 #aws_region = "eu-south-1" defaulted
 
-public_key = "" # jenkins pub
+public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvrXPCYt6eafXPErGkf9bbbRzZqk+ORaXaw+srwS/g55JF2Br2ZC3W5SYbhPkCuYaVk/FiP9vCFNxLMfWi0y5QQLBEHIG1HoFQPzve8kiQfmAdnuQUUhyIZKSKEDpTZcgWz4yhhwiXLGgSAuIzhnArNVZfobJTbe3A2D8wnNbI2/Wdu5tMWmCzGfI3HWkSLCwkvXEd/NgDve0GwaZMza9fYFaUCGKTe8ok/xtdeatV+pbIjlS45QzdvRpPPqFXtShrUzizG8pR+7lPqGpgytgTdOlwoSfLvhFX2Upd2GDW4YXXwBl8CzsGQgiYZCuQh8hEAjs6KziBDXuMOyFVX1++dxb3jwwnGHfCKs/NOD7xr6+PFNI1MSLbcgSrUX1/hxt71g8SrJ7gcrAfHB8k+uTrYG+pnP3pKHiKj6HcUKdtjWgyGcsv4MEu9EbocP9iohURzGvEivnWBv7ET62zvSG6IubUO6odhj4D4ije2kiGvHdtAlp8t289NRfGnlktmiE= root@MSI" # jenkins pub

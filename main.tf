@@ -29,3 +29,29 @@ module "jenkins_instance"{
   public_key = var.public_key
   jenkins_install_script = templatefile("./jenkins_script/installer.sh", {})
 }
+
+module "lb_target_group" {
+  source = "./lbtg"
+  lb_target_group_name = "jenkins-tg"
+  lb_target_group_port = 8080
+  lb_target_group_protocol = "HTTP"
+  vpc_id = module.network.vpc_id
+  ec2_instance_id = module.jenkins_instance.jenkins_id
+
+}
+
+module "application_load_balancer" {
+  source = "./load_balancer"
+  lb_name = "jenkins-alb"
+  lb_type = "application"
+  lb_listner_default_action = "forward"
+  lb_target_group_arn = module.lb_target_group.lb_target_group_arn
+  ec2_instance_id = module.jenkins_instance.jenkins_id
+  #certificate_arn = ehhh
+
+ 
+
+
+
+  
+}

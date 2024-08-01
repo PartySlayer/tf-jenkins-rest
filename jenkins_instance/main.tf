@@ -16,3 +16,4 @@ resource "aws_instance" "jenkins" {
     http_tokens   = "required" # most secure option forcing IMDSv2 to retrieve instance info instead of v1
   }
 }
+
