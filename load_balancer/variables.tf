@@ -42,3 +42,12 @@ variable "internal" {
     description = "defines if the lb is internal or not"
 
 }
+
+variable "subnets" {
+    description = "subnet list"
+
+}
+variable "security_groups" {
+    description = "security groups attached to the load balancer"
+  
+}

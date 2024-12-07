@@ -1,8 +1,10 @@
-resource "aws_lb" "lb" {
+
+
+resource "aws_lb" "lb" { 
   name                        = var.lb_name
   load_balancer_type          = var.lb_type
-  security_groups             = [module.security_group.open_sg]
-  subnets                     = [module.network.public_subnets_id]
+  security_groups             = var.security_groups
+  subnets                     = var.subnets
   internal                    = var.internal
   enable_deletion_protection  = false 
 

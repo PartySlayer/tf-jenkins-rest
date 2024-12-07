@@ -48,6 +48,8 @@ module "application_load_balancer" {
   lb_listner_default_action = "forward"
   lb_target_group_arn = module.lb_target_group.lb_target_group_arn
   ec2_instance_id = module.jenkins_instance.jenkins_id
+  security_groups = [module.security_group.open_sg]
+  subnets = module.network.public_subnets_id
   #certificate_arn = ehhh
 
  
