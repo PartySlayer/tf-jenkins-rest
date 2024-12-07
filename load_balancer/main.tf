@@ -3,8 +3,8 @@ resource "aws_lb" "lb" {
   load_balancer_type          = var.lb_type
   security_groups             = [module.security_group.open_sg]
   subnets                     = [module.network.public_subnets_id]
-  internal                    = false
-  enable_deletion_protection  = false
+  internal                    = var.internal
+  enable_deletion_protection  = false 
 
   tags = {
     name = "lb-jenkins-tf"

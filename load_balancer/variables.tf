@@ -37,3 +37,8 @@ variable "lb_target_group_attachment_port" {
     description = "port used for target group attachment"
     default = 8080
 }
+
+variable "internal" {
+    description = "defines if the lb is internal or not"
+
+}

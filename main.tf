@@ -44,6 +44,7 @@ module "application_load_balancer" {
   source = "./load_balancer"
   lb_name = "jenkins-alb"
   lb_type = "application"
+  internal = true
   lb_listner_default_action = "forward"
   lb_target_group_arn = module.lb_target_group.lb_target_group_arn
   ec2_instance_id = module.jenkins_instance.jenkins_id
